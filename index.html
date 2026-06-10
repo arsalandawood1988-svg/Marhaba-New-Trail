@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marhaba Marriage Bureau - Find Your Perfect Muslim Life Partner</title>
+    <title>Marhaba Marriage Bureau - Nikkah ko Asan Banay</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -47,8 +47,40 @@
                     </a>
                 </div>
             </div>
-            <div class="relative">
-                <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Wedding" class="rounded-3xl shadow-2xl w-full object-cover h-[400px]">
+            <div class="bg-white p-8 rounded-3xl shadow-xl shadow-rose-100/50 border border-gray-100">
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-rose-100 flex items-center justify-center text-rose-600">
+                            <i class="fa-solid fa-file-signature text-lg"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Quick Inquiry Form</h3>
+                    </div>
+                    <p class="text-sm text-gray-600 pb-3">Apni details likhein aur direct Facebook par hamari team se rabta karein.</p>
+                </div>
+                
+                <form id="contactForm" class="space-y-5">
+                    <div class="relative">
+                        <label class="text-xs font-medium text-gray-500 mb-1 block">Full Name (Aapka Naam)</label>
+                        <input type="text" id="userName" name="userName" required class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-rose-200 focus:border-rose-300 transition text-sm">
+                    </div>
+                    <div class="relative">
+                        <label class="text-xs font-medium text-gray-500 mb-1 block">Gender (Larka ya Larki)</label>
+                        <select id="userGender" name="userGender" required class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-rose-200 focus:border-rose-300 transition text-sm bg-white">
+                            <option value="">Select Gender</option>
+                            <option value="Male">Male (Larka)</option>
+                            <option value="Female">Female (Larki)</option>
+                        </select>
+                    </div>
+                    <div class="relative">
+                        <label class="text-xs font-medium text-gray-500 mb-1 block">Your Requirements (Aapki Pasand)</label>
+                        <textarea id="userRequirements" name="userRequirements" rows="3" class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-rose-200 focus:border-rose-300 transition text-sm" placeholder="Jaise ke education, age family background wagera..."></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="w-full inline-flex items-center justify-center gap-2 bg-rose-600 hover:bg-rose-700 text-white px-6 py-3 rounded-xl font-semibold shadow-md shadow-rose-200 transition text-base">
+                            Submit via Facebook Messenger <i class="fa-brands fa-facebook-messenger text-lg"></i>
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
