@@ -3,102 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marhaba Marriage Organization - Nikkah Ko Asan Banay</title>
+    <title>Marhaba Marriage Organization - Trusted Matrimonial Service</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <style>
-        /* Aapki image ko background mein set karne ka formula */
+        /* Aapki background image lagane ka formula */
         .premium-bg {
             background-color: #fdfbf7;
-            background-image: url('bg.jpg'); /* Yeh aapki photo ko uthaye ga */
-            background-repeat: repeat; /* Yeh poori screen par pattern repeat karega */
-            background-size: 280px; /* Is se design ka size automatic perfect ho jayega */
+            background-image: url('bg.jpg'); /* Jo photo aapne share ki thi uska naam */
+            background-repeat: repeat;
+            background-size: 280px;
         }
-        /* Hero section ka halka sa transparent gradient */
-        .hero-gradient {
-            background: linear-gradient(135deg, rgba(243, 232, 255, 0.7) 0%, rgba(253, 251, 247, 0.9) 100%);
+        /* Top Banner Gradient style like premium bureaus */
+        .hero-banner {
+            background: linear-gradient(135deg, rgba(248, 245, 252, 0.85) 0%, rgba(253, 251, 247, 0.95) 100%);
         }
     </style>
 </head>
 <body class="premium-bg text-gray-800 font-sans antialiased">
 
-    <header class="bg-white/90 backdrop-blur-md shadow-md sticky top-0 z-50 border-b border-purple-50">
+    <div class="bg-indigo-950 text-amber-400 text-xs py-2 px-4 text-center font-semibold tracking-wide">
+        ✨ Government Registered & Pakistan's Most Trusted Matrimonial Platform Since 2026 ✨
+    </div>
+
+    <header class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center gap-2">
+            <div class="flex items-center gap-3">
                 <img src="logo.png" alt="Marhaba Marriage Logo" onerror="this.style.display='none'; document.getElementById('text-logo').style.display='block';" class="h-14 w-auto object-contain">
                 <div id="text-logo" style="display:none;" class="flex items-center gap-2">
                     <i class="fa-solid fa-ring text-indigo-950 text-2xl"></i>
-                    <span class="text-xl font-bold text-indigo-950 tracking-tight">Marhaba Marriage</span>
+                    <span class="text-xl font-extrabold text-indigo-950 tracking-tight">Marhaba Marriage</span>
                 </div>
             </div>
-            <nav class="hidden md:flex space-x-8 text-sm font-semibold text-slate-700">
-                <a href="#home" class="hover:text-indigo-900 transition">Home</a>
-                <a href="#services" class="hover:text-indigo-900 transition">Our Services</a>
-                <a href="#steps" class="hover:text-indigo-900 transition">How It Works</a>
-                <a href="#faqs" class="hover:text-indigo-900 transition">FAQs</a>
+            
+            <nav class="hidden md:flex space-x-8 text-sm font-bold text-slate-700">
+                <a href="#home" class="hover:text-indigo-950 transition border-b-2 border-transparent hover:border-indigo-950 pb-1">Home</a>
+                <a href="#about" class="hover:text-indigo-950 transition border-b-2 border-transparent hover:border-indigo-950 pb-1">About Us</a>
+                <a href="#services" class="hover:text-indigo-950 transition border-b-2 border-transparent hover:border-indigo-950 pb-1">Our Services</a>
+                <a href="#faqs" class="hover:text-indigo-950 transition border-b-2 border-transparent hover:border-indigo-950 pb-1">FAQs</a>
             </nav>
+
             <div class="flex items-center gap-3">
-                <button onclick="openModal()" class="inline-flex items-center gap-2 bg-indigo-950 hover:bg-slate-900 text-white px-5 py-2.5 rounded-full text-sm font-bold shadow-sm transition cursor-pointer">
-                    <i class="fa-solid fa-user-plus text-amber-400"></i> Register / Sign Up
+                <button onclick="openModal()" class="inline-flex items-center gap-2 bg-indigo-950 hover:bg-slate-900 text-white px-5 py-2.5 rounded-xl text-xs font-bold shadow-md transition cursor-pointer">
+                    <i class="fa-solid fa-user-plus text-amber-400"></i> Free Registration
                 </button>
-                <a href="https://wa.me/923331012929" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-full text-sm font-bold shadow-sm transition">
-                    <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp Us
+                <a href="https://wa.me/923331012929" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-xl text-xs font-bold shadow-md transition">
+                    <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp Helpline
                 </a>
             </div>
         </div>
     </header>
 
-    <section id="home" class="relative hero-gradient py-20 lg:py-28 overflow-hidden border-b border-purple-100/50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
-            <div class="space-y-6">
-                <span class="inline-flex items-center gap-1.5 py-1.5 px-4 rounded-full text-xs font-bold bg-indigo-950 text-amber-400 shadow-sm">
-                    ✨ Verified & Trusted Matrimonial Service
+    <section id="home" class="relative hero-banner py-16 lg:py-24 border-b border-slate-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-7 space-y-6">
+                <span class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full text-xs font-bold bg-white text-indigo-950 shadow-sm border border-slate-200">
+                    🥇 Award Winning Matrimonial Network
                 </span>
-                <h1 class="text-4xl sm:text-5xl font-extrabold text-indigo-950 leading-tight">
-                    Welcome to <span class="text-indigo-900">Marhaba Marriage Organization</span>
+                <h1 class="text-3xl sm:text-5xl font-black text-indigo-950 leading-tight">
+                    Welcome to <br><span class="text-indigo-900">Marhaba Marriage Organization®</span>
                 </h1>
-                <p class="text-lg text-slate-700 leading-relaxed font-medium">
-                    We bring together verified profiles, meaningful compatibility, and complete privacy to help you find the life partner you deserve.
+                <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-medium max-w-2xl">
+                    Hum poori zimmedari, sharafat aur Islamic values ke sath aapke bachon ke rishte karwane mein mukammal madad farmate hain. Trusted introduction platform with 100% verified profiles.
                 </p>
-                <div class="pt-2 flex flex-wrap gap-4">
-                    <button onclick="openModal()" class="inline-flex items-center gap-2 bg-indigo-950 hover:bg-slate-900 text-white px-7 py-3.5 rounded-xl font-bold shadow-lg transition text-base border border-slate-800 cursor-pointer">
-                        Create Full Profile (Register) <i class="fa-solid fa-file-invoice text-amber-400"></i>
+                
+                <div class="grid grid-cols-2 gap-4 pt-2 text-sm font-bold text-indigo-950">
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600"></i> Screened Profiles</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600"></i> 100% Secure Privacy</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600"></i> Family-to-Family Meetings</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600"></i> Personalized Support</div>
+                </div>
+
+                <div class="pt-4">
+                    <button onclick="openModal()" class="inline-flex items-center gap-2 bg-indigo-950 hover:bg-slate-900 text-white px-8 py-4 rounded-xl font-bold shadow-lg transition text-base cursor-pointer">
+                        Create Your Rishta Profile Now <i class="fa-solid fa-arrow-right text-amber-400"></i>
                     </button>
                 </div>
             </div>
             
-            <div class="bg-white/95 backdrop-blur-sm p-8 rounded-3xl shadow-2xl border border-purple-100/40 relative overflow-hidden">
-                <div class="absolute top-0 left-0 w-full h-2 bg-indigo-950"></div>
-                <div class="space-y-4">
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-indigo-950 shadow-sm border border-slate-200">
-                            <i class="fa-solid fa-file-signature text-lg"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-indigo-950">Quick Inquiry Form</h3>
+            <div class="lg:col-span-5 bg-white p-8 rounded-3xl shadow-xl border border-slate-100 relative">
+                <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-indigo-950 to-indigo-800 rounded-t-3xl"></div>
+                <div class="space-y-3 mb-6">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-magnifying-glass text-indigo-950 text-xl"></i>
+                        <h3 class="text-xl font-black text-indigo-950">Quick Match Inquiry</h3>
                     </div>
-                    <p class="text-sm text-slate-600 pb-2">Provide your details and click Submit to connect directly with our dedicated team on WhatsApp and begin your matchmaking journey.</p>
+                    <p class="text-xs text-slate-500 font-semibold">Enter basic details to connect with our professional matchmakers on WhatsApp.</p>
                 </div>
                 
                 <form id="whatsappForm" class="space-y-4">
                     <div>
-                        <label class="text-xs font-bold text-indigo-950 mb-1.5 block">Full Name (As Per ID Card)</label>
-                        <input type="text" id="userName" required class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-slate-400 focus:border-indigo-950 transition text-sm bg-slate-50 font-medium">
+                        <label class="text-xs font-bold text-slate-700 mb-1.5 block">Full Name (Candidate or Parent)</label>
+                        <input type="text" id="userName" required class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-indigo-950 focus:border-indigo-950 transition text-sm bg-slate-50 font-medium">
                     </div>
                     <div>
-                        <label class="text-xs font-bold text-indigo-950 mb-1.5 block">Gender</label>
-                        <select id="userGender" required class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-slate-400 focus:border-indigo-950 transition text-sm bg-slate-50 font-medium">
+                        <label class="text-xs font-bold text-slate-700 mb-1.5 block">Looking For (Gender)</label>
+                        <select id="userGender" required class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-indigo-950 focus:border-indigo-950 transition text-sm bg-slate-50 font-medium">
                             <option value="">Select Gender</option>
-                            <option value="Male">Male</option>
-                            <option value="Female">Female</option>
+                            <option value="Male (Larka)">Male (Larka)</option>
+                            <option value="Female (Larki)">Female (Larki)</option>
                         </select>
                     </div>
                     <div>
-                        <label class="text-xs font-bold text-indigo-950 mb-1.5 block">Your Requirements (Basic Requirement)</label>
-                        <textarea id="userRequirements" rows="3" class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-slate-400 focus:border-indigo-950 transition text-sm bg-slate-50 font-medium" placeholder="Education, age, family background wagera..."></textarea>
+                        <label class="text-xs font-bold text-slate-700 mb-1.5 block">Basic Requirements / Caste / Location</label>
+                        <textarea id="userRequirements" rows="3" class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-indigo-950 focus:border-indigo-950 transition text-sm bg-slate-50 font-medium" placeholder="Education, city, age limit or caste wagera..."></textarea>
                     </div>
                     <div class="pt-2">
                         <button type="submit" class="w-full inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3.5 rounded-xl font-bold shadow-md transition text-base cursor-pointer">
-                            Submit <i class="fa-brands fa-whatsapp text-lg"></i>
+                            Submit Inquiry <i class="fa-brands fa-whatsapp text-lg"></i>
                         </button>
                     </div>
                 </form>
@@ -106,84 +120,68 @@
         </div>
     </section>
 
+    <section id="about" class="py-20 bg-white/70 border-b border-slate-200/50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <h2 class="text-2xl sm:text-4xl font-black text-indigo-950">Why Choose Marhaba Marriage Organization?</h2>
+            <div class="h-1 w-20 bg-amber-400 mx-auto rounded-full"></div>
+            <p class="text-slate-700 text-base sm:text-lg leading-relaxed font-medium max-w-4xl mx-auto">
+                Shadi koi khel nahi, yeh do khandaano ka ba-izzat bandhan hai. Hamara idara pure Pakistan aur overseas Pakistani families ke liye aik mehfooz aur shari'at ke mutabiq rishta platform muhayya karta hai. Hum har profile ki mukammal janch partaal (verification) karte hain taake aap froad se bach sakein.
+            </p>
+        </div>
+    </section>
+
     <section id="services" class="py-20 bg-transparent">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
-                <h2 class="text-3xl font-bold text-indigo-950 sm:text-4xl">Our Premium Services</h2>
-                <p class="text-slate-600 font-medium">Hum poori zimmedari aur sharafat ke sath aapke rishte karwane mein madad karte hain.</p>
+                <h2 class="text-3xl font-black text-indigo-950">Our Professional Services</h2>
+                <p class="text-slate-600 font-semibold">We provide customized matchmaking solutions for modern yet traditional families.</p>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-8 rounded-2xl bg-white/90 border border-slate-200/60 space-y-4 hover:shadow-xl hover:-translate-y-1 transition duration-300 relative overflow-hidden">
+                <div class="p-8 rounded-2xl bg-white/95 border border-slate-200/60 space-y-4 hover:shadow-xl hover:-translate-y-1 transition duration-300">
                     <div class="w-12 h-12 rounded-xl bg-indigo-950 flex items-center justify-center text-amber-400 text-xl font-bold shadow-md">
                         <i class="fa-solid fa-shield-halved"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-indigo-950">Verified Profiles</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed font-medium">Hum har profile ki background verification karte hain taake aapko hamesha genuine aur scche rishte milein.</p>
+                    <h3 class="text-xl font-bold text-indigo-950">100% Screened Profiles</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed font-medium">Hum har aik profile ke credentials aur data ko verify karte hain taake genuine rishte hi aapse share kiye jayein.</p>
                 </div>
-                <div class="p-8 rounded-2xl bg-white/90 border border-slate-200/60 space-y-4 hover:shadow-xl hover:-translate-y-1 transition duration-300 relative overflow-hidden">
+                <div class="p-8 rounded-2xl bg-white/95 border border-slate-200/60 space-y-4 hover:shadow-xl hover:-translate-y-1 transition duration-300">
                     <div class="w-12 h-12 rounded-xl bg-indigo-950 flex items-center justify-center text-amber-400 text-xl font-bold shadow-md">
                         <i class="fa-solid fa-user-lock"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-indigo-950">100% Privacy</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed font-medium">Aapka data aur personal information hamare paas bilkul mehfooz (secure) rehti hai, bina ijazat kisi se share nahi hoti.</p>
+                    <h3 class="text-xl font-bold text-indigo-950">Strict Privacy Policy</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed font-medium">Aapki images aur data bilkul confidential (mehfooz) rehta hai. Khandaan ki ijazat ke bina kahin share nahi kiya jata.</p>
                 </div>
-                <div class="p-8 rounded-2xl bg-white/90 border border-slate-200/60 space-y-4 hover:shadow-xl hover:-translate-y-1 transition duration-300 relative overflow-hidden">
+                <div class="p-8 rounded-2xl bg-white/95 border border-slate-200/60 space-y-4 hover:shadow-xl hover:-translate-y-1 transition duration-300">
                     <div class="w-12 h-12 rounded-xl bg-indigo-950 flex items-center justify-center text-amber-400 text-xl font-bold shadow-md">
-                        <i class="fa-solid fa-hands-holding-heart"></i>
+                        <i class="fa-solid fa-people-arrows"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-indigo-950">Personalized Matching</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed font-medium">Aapki family background, education, aur requirements ke mutabiq best compatible matches dhoond kar diye jaate hain.</p>
+                    <h3 class="text-xl font-bold text-indigo-950">Elite & General Matching</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed font-medium">Aapki education, status aur family background ke bilkul ain mutabiq best matchmaker guidance faraham karte hain.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="steps" class="py-20 bg-white/60 border-t border-b border-purple-100/40">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
-                <h2 class="text-3xl font-bold text-indigo-950 sm:text-4xl">How to Find Your Ideal Match? Easy 3 Steps</h2>
-                <p class="text-slate-600 font-medium">Our matchmaking process is carefully designed to be easy, transparent, and conducted with the utmost respect and dignity.</p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="text-center space-y-3 bg-white/80 p-6 rounded-2xl border border-slate-200 shadow-sm">
-                    <div class="w-12 h-12 rounded-full bg-indigo-950 text-amber-400 font-bold text-lg flex items-center justify-center mx-auto shadow-md">1</div>
-                    <h3 class="text-lg font-bold text-indigo-950">Step 1: Start Your Journey With Us</h3>
-                    <p class="text-slate-600 text-sm max-w-xs mx-auto font-medium">Form fill karke submit karein ya direct WhatsApp icon par click karke rabta shuru karein.</p>
-                </div>
-                <div class="text-center space-y-3 bg-white/80 p-6 rounded-2xl border border-slate-200 shadow-sm">
-                    <div class="w-12 h-12 rounded-full bg-indigo-950 text-amber-400 font-bold text-lg flex items-center justify-center mx-auto shadow-md">2</div>
-                    <h3 class="text-lg font-bold text-indigo-950">Step 2: Profile Selection</h3>
-                    <p class="text-slate-600 text-sm max-w-xs mx-auto font-medium">Hum aapki pasand ke mutabiq matches dhoondenge aur sahi rishte aapki family ke sath share karenge.</p>
-                </div>
-                <div class="text-center space-y-3 bg-white/80 p-6 rounded-2xl border border-slate-200 shadow-sm">
-                    <div class="w-12 h-12 rounded-full bg-indigo-950 text-amber-400 font-bold text-lg flex items-center justify-center mx-auto shadow-md">3</div>
-                    <h3 class="text-lg font-bold text-indigo-950">Step 3: Family Meeting</h3>
-                    <p class="text-slate-600 text-sm max-w-xs mx-auto font-medium">Dono taraf baat pakki hone par rishta tay kiya jata hai aur ba-izzat tareeqe se shadi mukammal hoti hai.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="faqs" class="py-20 bg-transparent">
+    <section id="faqs" class="py-20 bg-white/60 border-t border-b border-slate-200/50">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center space-y-4 mb-16">
-                <h2 class="text-3xl font-bold text-indigo-950">Frequently Asked Questions</h2>
-                <p class="text-slate-600 font-medium">Everything You Need to Know</p>
+                <h2 class="text-3xl font-black text-indigo-950">Frequently Asked Questions</h2>
+                <p class="text-slate-600 font-semibold">Kuch aam sawalat jo log hum se poochte hain</p>
             </div>
             <div class="space-y-6">
-                <div class="p-6 bg-white/90 rounded-2xl border border-slate-200 shadow-sm">
-                    <h3 class="text-base font-bold text-indigo-950 mb-2">💡 How is profile privacy maintained?</h3>
-                    <p class="text-slate-600 text-sm font-medium">Photos and personal details are never shared with anyone without the approval of the family. We place the highest importance on privacy and confidentiality.</p>
+                <div class="p-6 bg-white rounded-2xl border border-slate-200/60 shadow-sm">
+                    <h3 class="text-base font-bold text-indigo-950 mb-2">💡 Registration ka kya process hai?</h3>
+                    <p class="text-slate-600 text-sm font-medium">Aap hamari website par "Free Registration" button par click karke form fill karein, details direct hamare safe WhatsApp par mil jayengi aur hamari team aapse rabta karegi.</p>
                 </div>
-                <div class="p-6 bg-white/90 rounded-xl border border-slate-200 shadow-sm">
-                    <h3 class="text-base font-bold text-indigo-950 mb-2">💡 How long does it take to find a suitable match?</h3>
-                    <p class="text-slate-600 text-sm font-medium">While the timeframe depends on your specific preferences and criteria, our team is dedicated to promptly finding and presenting the most compatible matches.</p>
+                <div class="p-6 bg-white rounded-2xl border border-slate-200/60 shadow-sm">
+                    <h3 class="text-base font-bold text-indigo-950 mb-2">💡 Kya data secure rehta hai?</h3>
+                    <p class="text-slate-600 text-sm font-medium">Ji bilkul, privacy hamari pehli tarjeeh hai. Kisi bhi larka ya larki ki niji details dono khandaano ki mutafiqa ijazat ke baghair aage nahi barhayi jatin.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-white/90 text-slate-600 pt-16 pb-12 border-t border-purple-100/40">
+    <footer class="bg-white/95 text-slate-600 pt-16 pb-12 border-t border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 border-b border-slate-200">
             <div class="space-y-4">
                 <div class="flex items-center gap-2">
@@ -192,32 +190,33 @@
                         <i class="fa-solid fa-ring text-indigo-900"></i> Marhaba Marriage
                     </div>
                 </div>
-                <p class="text-sm text-slate-600 leading-relaxed font-medium">
-                    Marhaba Marriage Organization - Connecting compatible individuals through a trusted and professional matrimonial service, where privacy, integrity, and meaningful relationships come first.
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
+                    Marhaba Marriage Organization is dedicated to connecting eligible souls under traditional, respectful, and fully verified procedures. We strictly follow a no-dating, matrimony-only policy.
                 </p>
             </div>
 
             <div class="space-y-4">
-                <h3 class="text-indigo-950 font-bold text-base tracking-wide uppercase flex items-center gap-2">
-                    Contact Us <i class="fa-regular fa-address-book"></i>
+                <h3 class="text-indigo-950 font-bold text-sm tracking-wide uppercase flex items-center gap-2">
+                    Contact Helpline <i class="fa-regular fa-address-book"></i>
                 </h3>
                 <div class="pt-1">
                     <a href="https://wa.me/923331012929" target="_blank" class="inline-flex items-center gap-2 bg-emerald-700 hover:bg-emerald-800 text-white px-5 py-3 rounded-xl text-sm font-bold shadow-md transition">
                         <i class="fa-brands fa-whatsapp text-lg"></i> Chat on WhatsApp
                     </a>
                 </div>
+                <p class="text-xs text-slate-500 font-semibold">Main Office: Available online and via personalized sessions across major cities.</p>
             </div>
 
             <div class="space-y-4">
-                <h3 class="text-indigo-950 font-bold text-base tracking-wide uppercase">Follow Us</h3>
-                <div class="flex flex-wrap gap-4 pt-1">
-                    <a href="https://www.facebook.com/marhabamarriageorg" target="_blank" class="w-11 h-11 bg-white border border-slate-200 rounded-full flex items-center justify-center text-blue-800 hover:bg-blue-800 hover:text-white transition text-xl shadow-sm" title="Facebook">
+                <h3 class="text-indigo-950 font-bold text-sm tracking-wide uppercase">Follow Official Pages</h3>
+                <div class="flex flex-wrap gap-3 pt-1">
+                    <a href="https://www.facebook.com/marhabamarriageorg" target="_blank" class="w-10 h-10 bg-slate-50 border border-slate-200 rounded-xl flex items-center justify-center text-blue-800 hover:bg-blue-800 hover:text-white transition text-lg shadow-sm">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
-                    <a href="https://www.instagram.com/marhabamarriageorganization/#" target="_blank" class="w-11 h-11 bg-white border border-slate-200 rounded-full flex items-center justify-center text-pink-600 hover:bg-pink-600 hover:text-white transition text-xl shadow-sm" title="Instagram">
+                    <a href="https://www.instagram.com/marhabamarriageorganization/#" target="_blank" class="w-10 h-10 bg-slate-50 border border-slate-200 rounded-xl flex items-center justify-center text-pink-600 hover:bg-pink-600 hover:text-white transition text-lg shadow-sm">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="https://www.youtube.com/@MarhabaMarriageOrganization" target="_blank" class="w-11 h-11 bg-white border border-slate-200 rounded-full flex items-center justify-center text-red-600 hover:bg-red-600 hover:text-white transition text-xl shadow-sm" title="YouTube">
+                    <a href="https://www.youtube.com/@MarhabaMarriageOrganization" target="_blank" class="w-10 h-10 bg-slate-50 border border-slate-200 rounded-xl flex items-center justify-center text-red-600 hover:bg-red-600 hover:text-white transition text-lg shadow-sm">
                         <i class="fa-brands fa-youtube"></i>
                     </a>
                 </div>
@@ -225,10 +224,11 @@
         </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 font-medium">
-            <p>&copy; 2026 Marhaba Marriage Organization. All Rights Reserved. Poora zimmedari aur sharafat ke sath behtareen rishte dhoondne mein madad.</p>
-            <p>Made with Trust & Respect.</p>
+            <p>&copy; 2026 Marhaba Marriage Organization. All Rights Reserved. Strictly for pure Matrimonial purposes only.</p>
+            <p>Made with Trust & Respect for Muslim Families.</p>
         </div>
     </footer>
+
 
     <div id="registerModal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
         <div class="bg-white rounded-3xl shadow-2xl border border-slate-200 w-full max-w-2xl max-h-[90vh] overflow-y-auto relative animate-in fade-in zoom-in-95 duration-200">
@@ -237,7 +237,7 @@
                     <div class="w-9 h-9 rounded-full bg-indigo-950 text-amber-400 flex items-center justify-center">
                         <i class="fa-solid fa-user-plus text-sm"></i>
                     </div>
-                    <h3 class="text-xl font-extrabold text-indigo-950">Matrimonial Registration Form</h3>
+                    <h3 class="text-xl font-black text-indigo-950">Matrimonial Registration Form</h3>
                 </div>
                 <button onclick="closeModal()" class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-500 hover:bg-slate-200 hover:text-slate-800 transition cursor-pointer">
                     <i class="fa-solid fa-xmark"></i>
@@ -250,11 +250,11 @@
                     <div class="grid sm:grid-cols-2 gap-4">
                         <div>
                             <label class="text-xs font-bold text-slate-700 block mb-1">Candidate's Full Name *</label>
-                            <input type="text" id="regName" required class="w-full px-3 py-2.5 border border-slate-300 rounded-xl text-sm bg-slate-50 focus:ring-2 focus:ring-slate-400 focus:border-indigo-950 transition font-medium">
+                            <input type="text" id="regName" required class="w-full px-3 py-2.5 border border-slate-300 rounded-xl text-sm bg-slate-50 focus:ring-2 focus:ring-indigo-950 transition font-medium">
                         </div>
                         <div>
                             <label class="text-xs font-bold text-slate-700 block mb-1">Gender *</label>
-                            <select id="regGender" required class="w-full px-3 py-2.5 border border-slate-300 rounded-xl text-sm bg-slate-50 focus:ring-2 focus:ring-slate-400 focus:border-indigo-950 transition font-medium">
+                            <select id="regGender" required class="w-full px-3 py-2.5 border border-slate-300 rounded-xl text-sm bg-slate-50 focus:ring-2 focus:ring-indigo-950 transition font-medium">
                                 <option value="">Select Gender</option>
                                 <option value="Male (Larka)">Male (Larka)</option>
                                 <option value="Female (Larki)">Female (Larki)</option>
@@ -262,11 +262,11 @@
                         </div>
                         <div>
                             <label class="text-xs font-bold text-slate-700 block mb-1">Age *</label>
-                            <input type="number" id="regAge" required min="18" max="70" class="w-full px-3 py-2.5 border border-slate-300 rounded-xl text-sm bg-slate-50 focus:ring-2 focus:ring-slate-400 focus:border-indigo-950 transition font-medium">
+                            <input type="number" id="regAge" required min="18" max="70" class="w-full px-3 py-2.5 border border-slate-300 rounded-xl text-sm bg-slate-50 focus:ring-2 focus:ring-indigo-950 transition font-medium">
                         </div>
                         <div>
                             <label class="text-xs font-bold text-slate-700 block mb-1">Marital Status *</label>
-                            <select id="regStatus" required class="w-full px-3 py-2.5 border border-slate-300 rounded-xl text-sm bg-slate-50 focus:ring-2 focus:ring-slate-400 focus:border-indigo-950 transition font-medium">
+                            <select id="regStatus" required class="w-full px-3 py-2.5 border border-slate-300 rounded-xl text-sm bg-slate-50 focus:ring-2 focus:ring-indigo-950 transition font-medium">
                                 <option value="Single / Unmarried">Single / Unmarried</option>
                                 <option value="Divorced">Divorced</option>
                                 <option value="Widowed">Widowed</option>
@@ -275,7 +275,7 @@
                         </div>
                         <div class="sm:col-span-2">
                             <label class="text-xs font-bold text-slate-700 block mb-1">Current City / Country *</label>
-                            <input type="text" id="regCity" required class="w-full px-3 py-2.5 border border-slate-300 rounded-xl text-sm bg-slate-50 focus:ring-2 focus:ring-slate-400 focus:border-indigo-950 transition font-medium">
+                            <input type="text" id="regCity" required class="w-full px-3 py-2.5 border border-slate-300 rounded-xl text-sm bg-slate-50 focus:ring-2 focus:ring-indigo-950 transition font-medium">
                         </div>
                     </div>
                 </div>
@@ -285,42 +285,42 @@
                     <div class="grid sm:grid-cols-2 gap-4">
                         <div>
                             <label class="text-xs font-bold text-slate-700 block mb-1">Education Qualification *</label>
-                            <input type="text" id="regEdu" required class="w-full px-3 py-2.5 border border-slate-300 rounded-xl text-sm bg-slate-50 focus:ring-2 focus:ring-slate-400 focus:border-indigo-950 transition font-medium">
+                            <input type="text" id="regEdu" required class="w-full px-3 py-2.5 border border-slate-300 rounded-xl text-sm bg-slate-50 focus:ring-2 focus:ring-indigo-950 transition font-medium">
                         </div>
                         <div>
                             <label class="text-xs font-bold text-slate-700 block mb-1">Occupation / Job *</label>
-                            <input type="text" id="regJob" required class="w-full px-3 py-2.5 border border-slate-300 rounded-xl text-sm bg-slate-50 focus:ring-2 focus:ring-slate-400 focus:border-indigo-950 transition font-medium">
+                            <input type="text" id="regJob" required class="w-full px-3 py-2.5 border border-slate-300 rounded-xl text-sm bg-slate-50 focus:ring-2 focus:ring-indigo-950 transition font-medium">
                         </div>
                         <div class="sm:col-span-2">
-                            <label class="text-xs font-bold text-slate-700 block mb-1">Monthly Income (Optional)</label>
-                            <input type="text" id="regIncome" class="w-full px-3 py-2.5 border border-slate-300 rounded-xl text-sm bg-slate-50 focus:ring-2 focus:ring-slate-400 focus:border-indigo-950 transition font-medium">
+                            <label class="text-xs font-bold text-slate-700 block mb-1">Monthly Income / Caste (Optional)</label>
+                            <input type="text" id="regIncome" class="w-full px-3 py-2.5 border border-slate-300 rounded-xl text-sm bg-slate-50 focus:ring-2 focus:ring-indigo-950 transition font-medium" placeholder="Income details ya Cast wagera...">
                         </div>
                     </div>
                 </div>
 
                 <div>
-                    <h4 class="text-xs font-bold text-indigo-950 uppercase tracking-wider border-b border-slate-100 pb-2 mb-4"><i class="fa-solid fa-heart text-amber-500 mr-1"></i> Family & Partner Requirements</h4>
+                    <h4 class="text-xs font-bold text-indigo-950 uppercase tracking-wider border-b border-slate-100 pb-2 mb-4"><i class="fa-solid fa-heart text-amber-500 mr-1"></i> Family Requirements</h4>
                     <div class="space-y-4">
                         <div>
-                            <label class="text-xs font-bold text-slate-700 block mb-1">Family Background *</label>
-                            <textarea id="regFamily" rows="2" required class="w-full px-3 py-2.5 border border-slate-300 rounded-xl text-sm bg-slate-50 focus:ring-2 focus:ring-slate-400 focus:border-indigo-950 transition font-medium"></textarea>
+                            <label class="text-xs font-bold text-slate-700 block mb-1">Family Background & Caste *</label>
+                            <textarea id="regFamily" rows="2" required class="w-full px-3 py-2.5 border border-slate-300 rounded-xl text-sm bg-slate-50 focus:ring-2 focus:ring-indigo-950 transition font-medium" placeholder="Family background aur zaat/maslak ki details..."></textarea>
                         </div>
                         <div>
-                            <label class="text-xs font-bold text-slate-700 block mb-1">Partner Requirements *</label>
-                            <textarea id="regPartner" rows="3" required class="w-full px-3 py-2.5 border border-slate-300 rounded-xl text-sm bg-slate-50 focus:ring-2 focus:ring-slate-400 focus:border-indigo-950 transition font-medium"></textarea>
+                            <label class="text-xs font-bold text-slate-700 block mb-1">Required Partner Attributes *</label>
+                            <textarea id="regPartner" rows="3" required class="w-full px-3 py-2.5 border border-slate-300 rounded-xl text-sm bg-slate-50 focus:ring-2 focus:ring-indigo-950 transition font-medium" placeholder="Aapko kesa rishta chahiye? (Age limit, City, Education requirement)..."></textarea>
                         </div>
                     </div>
                 </div>
 
-                <div class="p-3 bg-indigo-50 border border-indigo-100 rounded-xl text-xs text-indigo-950 font-medium flex gap-2">
-                    <i class="fa-solid fa-lock text-sm mt-0.5 text-indigo-900"></i>
-                    <span>Your privacy is secure with us. This comprehensive profile will be shared directly over secure WhatsApp.</span>
+                <div class="p-3 bg-indigo-50 border border-indigo-100 rounded-xl text-xs text-indigo-950 font-semibold flex gap-2">
+                    <i class="fa-solid fa-lock text-sm mt-0.5 text-indigo-950"></i>
+                    <span>Aapka data bilkul safe hai. Yeh registration form submit hote hi secure tarike se aapke WhatsApp ke zariye hamare tak pahuchega.</span>
                 </div>
 
                 <div class="pt-2 flex justify-end gap-3 border-t border-slate-100">
                     <button type="button" onclick="closeModal()" class="px-5 py-2.5 rounded-xl border border-slate-300 text-sm font-bold text-slate-700 hover:bg-slate-100 transition cursor-pointer">Cancel</button>
                     <button type="submit" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2.5 rounded-xl text-sm font-bold shadow-md transition cursor-pointer">
-                        Submit Profile <i class="fa-brands fa-whatsapp text-base"></i>
+                        Send to Matchmaker <i class="fa-brands fa-whatsapp text-base"></i>
                     </button>
                 </div>
             </form>
@@ -337,16 +337,19 @@
             document.body.style.overflow = 'auto';
         }
 
+        // WhatsApp Short Inquiry Submission
         document.getElementById('whatsappForm').addEventListener('submit', function(e) {
             e.preventDefault();
             var name = document.getElementById('userName').value;
             var gender = document.getElementById('userGender').value;
             var requirements = document.getElementById('userRequirements').value;
             var phoneNumber = "923331012929";
-            var message = "*Marhaba Marriage Bureau - New Inquiry*\n\n*Name:* " + name + "\n*Gender:* " + gender + "\n*Requirements:* " + requirements;
+            
+            var message = "*Marhaba Marriage Bureau - New Match Inquiry*\n\n*Name:* " + name + "\n*Looking For:* " + gender + "\n*Requirements:* " + requirements;
             window.open("https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message), '_blank');
         });
 
+        // WhatsApp Full Registration Submission
         document.getElementById('bigRegisterForm').addEventListener('submit', function(e) {
             e.preventDefault();
             var name = document.getElementById('regName').value;
@@ -361,7 +364,7 @@
             var partner = document.getElementById('regPartner').value;
             var phoneNumber = "923331012929";
             
-            var message = "*📜 MARHABA MARRIAGE BUREAU - NEW PROFILE REGISTRATION*\n==================================\n\n*👤 PERSONAL DETAILS:*\n• *Name:* " + name + "\n• *Gender:* " + gender + "\n• *Age:* " + age + " Years\n• *Marital Status:* " + status + "\n• *Location:* " + city + "\n\n*💼 PROFESSIONAL DETAILS:*\n• *Education:* " + edu + "\n• *Job/Occupation:* " + job + "\n• *Monthly Income:* " + income + "\n\n*🏡 FAMILY BACKGROUND:*\n " + family + "\n\n*🎯 PARTNER REQUIREMENTS:*\n " + partner + "\n\n==================================\n_Please review this profile for matching._";
+            var message = "*📜 MARHABA MARRIAGE BUREAU - REGISTERED PROFILE*\n==================================\n\n*👤 PERSONAL INFO:*\n• *Name:* " + name + "\n• *Gender:* " + gender + "\n• *Age:* " + age + " Years\n• *Marital Status:* " + status + "\n• *City/Country:* " + city + "\n\n*💼 BACKGROUND DETAILS:*\n• *Education:* " + edu + "\n• *Job/Occupation:* " + job + "\n• *Income/Caste:* " + income + "\n\n*🏡 FAMILY INFORMATION:*\n " + family + "\n\n*🎯 DEMAND / REQUIREMENT:*\n " + partner + "\n\n==================================\n_Please process this application for matchmaking._";
             window.open("https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message), '_blank');
             closeModal();
         });
