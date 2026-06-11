@@ -7,13 +7,16 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
+        /* Soft Premium Background Pattern */
         .premium-bg {
             background-color: #fafafa;
             background-image: radial-gradient(#e5e7eb 1px, transparent 1px), radial-gradient(#e5e7eb 1px, #fafafa 1px);
             background-size: 24px 24px;
             background-position: 0 0, 12px 12px;
         }
-        .hero-gradient { background: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 100%); }
+        .hero-gradient {
+            background: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 100%);
+        }
     </style>
 </head>
 <body class="premium-bg text-gray-800 font-sans antialiased">
@@ -29,31 +32,74 @@
             </div>
             <nav class="hidden md:flex space-x-8 text-sm font-semibold text-slate-700">
                 <a href="#home" class="hover:text-indigo-900 transition">Home</a>
-                <a href="#meeting" class="hover:text-indigo-900 transition">Face-to-Face Meeting</a>
                 <a href="#services" class="hover:text-indigo-900 transition">Our Services</a>
                 <a href="#steps" class="hover:text-indigo-900 transition">How It Works</a>
+                <a href="#faqs" class="hover:text-indigo-900 transition">FAQs</a>
             </nav>
             <div class="flex items-center gap-3">
                 <button onclick="openModal()" class="inline-flex items-center gap-2 bg-indigo-950 hover:bg-slate-900 text-white px-5 py-2.5 rounded-full text-sm font-bold shadow-sm transition cursor-pointer">
-                    <i class="fa-solid fa-user-plus text-amber-400"></i> Register
+                    <i class="fa-solid fa-user-plus text-amber-400"></i> Register / Sign Up
                 </button>
+                <a href="https://wa.me/923331012929" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-full text-sm font-bold shadow-sm transition">
+                    <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp Us
+                </a>
             </div>
         </div>
     </header>
 
-    <section id="home" class="relative hero-gradient py-20 lg:py-28 border-b border-slate-200">
+    <section id="home" class="relative hero-gradient py-20 lg:py-28 overflow-hidden border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
             <div class="space-y-6">
-                <span class="inline-flex items-center gap-1.5 py-1.5 px-4 rounded-full text-xs font-bold bg-indigo-950 text-amber-400">✨ Trusted Matrimonial Service</span>
-                <h1 class="text-4xl sm:text-5xl font-extrabold text-indigo-950 leading-tight">Welcome to <span class="text-indigo-900">Marhaba Marriage Organization</span></h1>
-                <p class="text-lg text-slate-700 font-medium">Verified profiles, meaningful compatibility, and complete privacy to help you find your life partner.</p>
+                <span class="inline-flex items-center gap-1.5 py-1.5 px-4 rounded-full text-xs font-bold bg-indigo-950 text-amber-400 shadow-sm">
+                    ✨ Verified & Trusted Matrimonial Service
+                </span>
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-indigo-950 leading-tight">
+                    Welcome to <span class="text-indigo-900">Marhaba Marriage Organization</span>
+                </h1>
+                <p class="text-lg text-slate-700 leading-relaxed font-medium">
+                    We bring together verified profiles, meaningful compatibility, and complete privacy to help you find the life partner you deserve.
+                </p>
+                <div class="pt-2 flex flex-wrap gap-4">
+                    <button onclick="openModal()" class="inline-flex items-center gap-2 bg-indigo-950 hover:bg-slate-900 text-white px-7 py-3.5 rounded-xl font-bold shadow-lg transition text-base border border-slate-800 cursor-pointer">
+                        Create Full Profile (Register) <i class="fa-solid fa-file-invoice text-amber-400"></i>
+                    </button>
+                </div>
             </div>
-            <div class="bg-white p-8 rounded-3xl shadow-2xl border border-slate-200">
-                <h3 class="text-xl font-bold text-indigo-950 mb-4">Quick Inquiry Form</h3>
+            
+            <div class="bg-white p-8 rounded-3xl shadow-2xl border border-slate-200 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-2 bg-indigo-950"></div>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-indigo-950 shadow-sm border border-slate-200">
+                            <i class="fa-solid fa-file-signature text-lg"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-indigo-950">Quick Inquiry Form</h3>
+                    </div>
+                    <p class="text-sm text-slate-600 pb-2">Provide your details and click Submit to connect directly with our dedicated team on WhatsApp and begin your matchmaking journey.</p>
+                </div>
+                
                 <form id="whatsappForm" class="space-y-4">
-                    <input type="text" id="userName" placeholder="Full Name" required class="w-full px-4 py-3 border border-slate-300 rounded-xl bg-slate-50">
-                    <select id="userGender" required class="w-full px-4 py-3 border border-slate-300 rounded-xl bg-slate-50"><option value="">Gender</option><option value="Male">Male</option><option value="Female">Female</option></select>
-                    <button type="submit" class="w-full bg-emerald-600 text-white py-3 rounded-xl font-bold">Submit</button>
+                    <div>
+                        <label class="text-xs font-bold text-indigo-950 mb-1.5 block">Full Name (As Per ID Card)</label>
+                        <input type="text" id="userName" required class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-slate-400 focus:border-indigo-950 transition text-sm bg-slate-50 font-medium">
+                    </div>
+                    <div>
+                        <label class="text-xs font-bold text-indigo-950 mb-1.5 block">Gender</label>
+                        <select id="userGender" required class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-slate-400 focus:border-indigo-950 transition text-sm bg-slate-50 font-medium">
+                            <option value="">Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="text-xs font-bold text-indigo-950 mb-1.5 block">Your Requirements (Basic Requirement)</label>
+                        <textarea id="userRequirements" rows="3" class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-slate-400 focus:border-indigo-950 transition text-sm bg-slate-50 font-medium" placeholder="Education, age, family background wagera..."></textarea>
+                    </div>
+                    <div class="pt-2">
+                        <button type="submit" class="w-full inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3.5 rounded-xl font-bold shadow-md transition text-base cursor-pointer">
+                            Submit <i class="fa-brands fa-whatsapp text-lg"></i>
+                        </button>
+                    </div>
                 </form>
             </div>
         </div>
@@ -62,13 +108,19 @@
     <section id="meeting" class="py-20 bg-white border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
             <div class="space-y-6">
-                <h2 class="text-3xl md:text-4xl font-extrabold text-indigo-950">Face-to-Face <span class="text-indigo-900">Rishta Meetings</span></h2>
-                <p class="text-slate-600 font-medium leading-relaxed">
-                    Marhaba Marriage aapke liye pesh karti hai mehfooz aur ba-izzat "Face-to-Face" meetups. Ab online se aage barhein aur apne honay walay jeevan sathi se amne-samne mulaqat karein.
+                <h2 class="text-4xl font-extrabold text-indigo-950 tracking-tight">Face-to-Face Rishta Meetings</h2>
+                <p class="text-slate-600 text-base leading-relaxed font-medium">
+                    Marhaba Marriage aapke liye pesh karti hai mehfooz aur ba-izzat "Face-to-Face" meetups. Ab online se aage barhein aur apne honay walay jeevan sathi ya unki family se amne-samne mulaqat karein. Hamari team aapki sahulat aur privacy ko madde-nazar rakhte hue meetings arrange karti hai.
                 </p>
-                <button onclick="openModal()" class="bg-indigo-950 text-white px-8 py-3 rounded-xl font-bold hover:bg-slate-900 transition">Book Your Meeting</button>
+                <div class="pt-2">
+                    <button onclick="openModal()" class="inline-flex items-center gap-2 bg-indigo-950 hover:bg-slate-900 text-white px-8 py-4 rounded-xl font-bold shadow-lg transition text-base cursor-pointer">
+                        Book Your Meeting <i class="fa-solid fa-handshake"></i>
+                    </button>
+                </div>
             </div>
-            <img src="YOUR_MEETING_IMAGE_URL" alt="Meeting" class="rounded-3xl shadow-2xl h-[400px] w-full object-cover">
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80" alt="Face to Face Meeting" class="rounded-3xl shadow-2xl w-full object-cover h-[400px] border border-slate-100">
+            </div>
         </div>
     </section>
 
@@ -76,9 +128,7 @@
         </div>
 
     <script>
-        function openModal() { document.getElementById('registerModal').classList.remove('hidden'); }
-        function closeModal() { document.getElementById('registerModal').classList.add('hidden'); }
-        document.getElementById('whatsappForm').addEventListener('submit', function(e) { e.preventDefault(); });
+        // Scripts
     </script>
 </body>
 </html>
