@@ -8,23 +8,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <style>
-        /* Aapki background image lagane ka formula */
-        .premium-bg {
-            background-color: #fdfbf7;
-            background-image: url('bg.jpg'); /* Jo photo aapne share ki thi uska naam */
-            background-repeat: repeat;
-            background-size: 280px;
+        /* CSS Se Bana Perfect, Seedha Aur Bilkul Light Polka Dot Background */
+        .premium-dot-bg {
+            background-color: #ffffff;
+            background-image: radial-gradient(rgba(30, 41, 59, 0.12) 1.5px, transparent 1.5px);
+            background-size: 24px 24px; /* Dots ka darmiyani gap */
         }
-        /* Top Banner Gradient style like premium bureaus */
+        /* Top Banner Style */
         .hero-banner {
-            background: linear-gradient(135deg, rgba(248, 245, 252, 0.85) 0%, rgba(253, 251, 247, 0.95) 100%);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(248, 250, 252, 0.95) 100%);
         }
     </style>
 </head>
-<body class="premium-bg text-gray-800 font-sans antialiased">
+<body class="premium-dot-bg text-gray-800 font-sans antialiased">
 
     <div class="bg-indigo-950 text-amber-400 text-xs py-2 px-4 text-center font-semibold tracking-wide">
-        ✨ Government Registered & Pakistan's Most Trusted Matrimonial Platform Since 2020 ✨
+        ✨ Government Registered & Pakistan's Most Trusted Matrimonial Platform Since 2026 ✨
     </div>
 
     <header class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-slate-100">
@@ -125,7 +124,7 @@
             <h2 class="text-2xl sm:text-4xl font-black text-indigo-950">Why Choose Marhaba Marriage Organization?</h2>
             <div class="h-1 w-20 bg-amber-400 mx-auto rounded-full"></div>
             <p class="text-slate-700 text-base sm:text-lg leading-relaxed font-medium max-w-4xl mx-auto">
-                Shadi koi khel nahi, yeh do khandaano ka ba-izzat bandhan hai. Hamara idara pure Pakistan aur overseas Pakistani families ke liye aik mehfooz aur shari'at ke mutabiq rishta platform muhayya karta hai. Hum har profile ki mukammal janch partaal (verification) karte hain taake aap froad se bach sakein.
+                Shadi koi khel nahi, yeh do khandaano ka ba-izzat bandhan hai. Hamara idara pure Pakistan aur overseas Pakistani families ke liye aik mehfooz aur shari'at ke mutabiq rishta platform muhayya karta hai. Hum har profile ki mukammal janch partaal (verification) karte hain taake aap fraud se bach sakein.
             </p>
         </div>
     </section>
@@ -162,7 +161,7 @@
         </div>
     </section>
 
-    <section id="faqs" class="py-20 bg-white/60 border-t border-b border-slate-200/50">
+    <section id="faqs" class="py-20 bg-white/70 border-t border-b border-slate-200/50">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center space-y-4 mb-16">
                 <h2 class="text-3xl font-black text-indigo-950">Frequently Asked Questions</h2>
@@ -337,7 +336,6 @@
             document.body.style.overflow = 'auto';
         }
 
-        // WhatsApp Short Inquiry Submission
         document.getElementById('whatsappForm').addEventListener('submit', function(e) {
             e.preventDefault();
             var name = document.getElementById('userName').value;
@@ -349,7 +347,6 @@
             window.open("https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message), '_blank');
         });
 
-        // WhatsApp Full Registration Submission
         document.getElementById('bigRegisterForm').addEventListener('submit', function(e) {
             e.preventDefault();
             var name = document.getElementById('regName').value;
