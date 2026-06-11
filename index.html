@@ -32,12 +32,14 @@
             </div>
             <nav class="hidden md:flex space-x-8 text-sm font-semibold text-slate-700">
                 <a href="#home" class="hover:text-indigo-900 transition">Home</a>
-                <a href="#legal" class="hover:text-indigo-900 transition">Legal Advice</a>
                 <a href="#services" class="hover:text-indigo-900 transition">Our Services</a>
                 <a href="#steps" class="hover:text-indigo-900 transition">How It Works</a>
                 <a href="#faqs" class="hover:text-indigo-900 transition">FAQs</a>
             </nav>
-            <div>
+            <div class="flex items-center gap-3">
+                <button onclick="openModal()" class="inline-flex items-center gap-2 bg-indigo-950 hover:bg-slate-900 text-white px-5 py-2.5 rounded-full text-sm font-bold shadow-sm transition cursor-pointer">
+                    <i class="fa-solid fa-user-plus text-amber-400"></i> Register / Sign Up
+                </button>
                 <a href="https://wa.me/923331012929" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-full text-sm font-bold shadow-sm transition">
                     <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp Us
                 </a>
@@ -57,10 +59,10 @@
                 <p class="text-lg text-slate-700 leading-relaxed font-medium">
                     We bring together verified profiles, meaningful compatibility, and complete privacy to help you find the life partner you deserve.
                 </p>
-                <div class="pt-2">
-                    <a href="https://wa.me/923331012929" target="_blank" class="inline-flex items-center gap-2 bg-indigo-950 hover:bg-slate-900 text-white px-7 py-3.5 rounded-xl font-bold shadow-lg transition text-base border border-slate-800">
-                        Start Your Search Now <i class="fa-solid fa-arrow-right text-amber-400"></i>
-                    </a>
+                <div class="pt-2 flex flex-wrap gap-4">
+                    <button onclick="openModal()" class="inline-flex items-center gap-2 bg-indigo-950 hover:bg-slate-900 text-white px-7 py-3.5 rounded-xl font-bold shadow-lg transition text-base border border-slate-800 cursor-pointer">
+                        Create Full Profile (Register) <i class="fa-solid fa-file-invoice text-amber-400"></i>
+                    </button>
                 </div>
             </div>
             
@@ -99,43 +101,6 @@
                         </button>
                     </div>
                 </form>
-            </div>
-        </div>
-    </section>
-
-    <section id="legal" class="py-20 bg-white border-b border-slate-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
-                <h2 class="text-4xl font-extrabold text-indigo-950 sm:text-5xl tracking-tight">Family Legal Advice</h2>
-                <p class="text-slate-600 text-base font-semibold max-w-2xl mx-auto leading-relaxed">
-                    Get free expert advice on marriage registration, legal documentation, and family rights. Our legal consultants ensure a smooth, hassle-free process in Pakistan and All over the World.
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="space-y-6 text-slate-700 text-sm sm:text-base leading-relaxed font-medium">
-                    <p>
-                        At Marhaba Marriage Organization, we understand that marriage involves more than just finding the right partner—it also requires legal clarity and guidance. That's why we offer free family legal advice to help you navigate important matters such as marriage registration, documentation, Nikkah procedures, and cross-border marriage laws in Pakistan and All over the World.
-                    </p>
-                    <p>
-                        Our legal experts are here to guide you through every step of the marriage process, providing professional advice, assistance with documentation, and ensuring that your marriage is smooth, secure, and legally recognized. Whether you need support with family-related legal matters, marriage registration, or visa and immigration requirements, our team is committed to helping you with confidence, clarity, and complete confidentiality.
-                    </p>
-                    <p>
-                        We believe in the power of meaningful connections and are here to help you find a partner who truly complements you. Let us be your trusted companion on this beautiful journey toward marriage.
-                    </p>
-                    <p class="text-indigo-950 font-bold text-lg pt-2">
-                        Get in touch today for expert legal consultation—completely free of charge!
-                    </p>
-                    <div class="pt-2">
-                        <a href="https://wa.me/923331012929" target="_blank" class="inline-flex items-center gap-2 bg-indigo-950 hover:bg-slate-900 text-white px-6 py-3.5 rounded-full font-bold shadow-md transition text-sm">
-                            Contact Now
-                        </a>
-                    </div>
-                </div>
-
-                <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Family Legal Advice Room" class="rounded-3xl shadow-2xl w-full object-cover h-[450px] border border-slate-100">
-                </div>
             </div>
         </div>
     </section>
@@ -211,7 +176,7 @@
                 </div>
                 <div class="p-6 bg-white rounded-xl border border-slate-200 shadow-sm">
                     <h3 class="text-base font-bold text-indigo-950 mb-2">💡 How long does it take to find a suitable match?</h3>
-                    <p class="text-slate-600 text-sm font-medium">YWhile the timeframe depends on your specific preferences and criteria, our team is dedicated to promptly finding and presenting the most compatible matches.</p>
+                    <p class="text-slate-600 text-sm font-medium">While the timeframe depends on your specific preferences and criteria, our team is dedicated to promptly finding and presenting the most compatible matches.</p>
                 </div>
             </div>
         </div>
@@ -266,7 +231,117 @@
         </div>
     </footer>
 
+
+    <div id="registerModal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl shadow-2xl border border-slate-200 w-full max-w-2xl max-h-[90vh] overflow-y-auto relative animate-in fade-in zoom-in-95 duration-200">
+            <div class="sticky top-0 bg-white border-b border-slate-100 px-6 py-4 flex items-center justify-between z-10">
+                <div class="flex items-center gap-2">
+                    <div class="w-9 h-9 rounded-full bg-indigo-950 text-amber-400 flex items-center justify-center">
+                        <i class="fa-solid fa-user-plus text-sm"></i>
+                    </div>
+                    <h3 class="text-xl font-extrabold text-indigo-950">Matrimonial Registration Form</h3>
+                </div>
+                <button onclick="closeModal()" class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-500 hover:bg-slate-200 hover:text-slate-800 transition cursor-pointer">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <form id="bigRegisterForm" class="p-6 space-y-6">
+                <div>
+                    <h4 class="text-xs font-bold text-indigo-950 uppercase tracking-wider border-b border-slate-100 pb-2 mb-4"><i class="fa-solid fa-user text-amber-500 mr-1"></i> Personal Information (Zati Details)</h4>
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="text-xs font-bold text-slate-700 block mb-1">Candidate's Full Name *</label>
+                            <input type="text" id="regName" required class="w-full px-3 py-2.5 border border-slate-300 rounded-xl text-sm bg-slate-50 focus:ring-2 focus:ring-slate-400 focus:border-indigo-950 transition font-medium">
+                        </div>
+                        <div>
+                            <label class="text-xs font-bold text-slate-700 block mb-1">Gender *</label>
+                            <select id="regGender" required class="w-full px-3 py-2.5 border border-slate-300 rounded-xl text-sm bg-slate-50 focus:ring-2 focus:ring-slate-400 focus:border-indigo-950 transition font-medium">
+                                <option value="">Select Gender</option>
+                                <option value="Male (Larka)">Male (Larka)</option>
+                                <option value="Female (Larki)">Female (Larki)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="text-xs font-bold text-slate-700 block mb-1">Age (Umar) *</label>
+                            <input type="number" id="regAge" required min="18" max="70" class="w-full px-3 py-2.5 border border-slate-300 rounded-xl text-sm bg-slate-50 focus:ring-2 focus:ring-slate-400 focus:border-indigo-950 transition font-medium">
+                        </div>
+                        <div>
+                            <label class="text-xs font-bold text-slate-700 block mb-1">Marital Status *</label>
+                            <select id="regStatus" required class="w-full px-3 py-2.5 border border-slate-300 rounded-xl text-sm bg-slate-50 focus:ring-2 focus:ring-slate-400 focus:border-indigo-950 transition font-medium">
+                                <option value="Single / Unmarried">Single / Unmarried</option>
+                                <option value="Divorced">Divorced</option>
+                                <option value="Widowed">Widowed</option>
+                                <option value="Khula">Khula</option>
+                            </select>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label class="text-xs font-bold text-slate-700 block mb-1">Current City / Country (Kahan Rehte Hain) *</label>
+                            <input type="text" id="regCity" placeholder="e.g., Lahore, Pakistan / Dubai, UAE" required class="w-full px-3 py-2.5 border border-slate-300 rounded-xl text-sm bg-slate-50 focus:ring-2 focus:ring-slate-400 focus:border-indigo-950 transition font-medium">
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold text-indigo-950 uppercase tracking-wider border-b border-slate-100 pb-2 mb-4"><i class="fa-solid fa-briefcase text-amber-500 mr-1"></i> Education & Job Details</h4>
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="text-xs font-bold text-slate-700 block mb-1">Education Qualification *</label>
+                            <input type="text" id="regEdu" placeholder="e.g., Masters / Bachelors / Matric" required class="w-full px-3 py-2.5 border border-slate-300 rounded-xl text-sm bg-slate-50 focus:ring-2 focus:ring-slate-400 focus:border-indigo-950 transition font-medium">
+                        </div>
+                        <div>
+                            <label class="text-xs font-bold text-slate-700 block mb-1">Occupation / Job *</label>
+                            <input type="text" id="regJob" placeholder="e.g., Software Engineer / Business / Housewife" required class="w-full px-3 py-2.5 border border-slate-300 rounded-xl text-sm bg-slate-50 focus:ring-2 focus:ring-slate-400 focus:border-indigo-950 transition font-medium">
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label class="text-xs font-bold text-slate-700 block mb-1">Monthly Income (Aamdani - Optional)</label>
+                            <input type="text" id="regIncome" placeholder="e.g., 1 Lakh+, 5000 AED, N/A" class="w-full px-3 py-2.5 border border-slate-300 rounded-xl text-sm bg-slate-50 focus:ring-2 focus:ring-slate-400 focus:border-indigo-950 transition font-medium">
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold text-indigo-950 uppercase tracking-wider border-b border-slate-100 pb-2 mb-4"><i class="fa-solid fa-heart text-amber-500 mr-1"></i> Family & Partner Requirements</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="text-xs font-bold text-slate-700 block mb-1">Family Background (Family details) *</label>
+                            <textarea id="regFamily" rows="2" placeholder="e.g., Noble family, 2 brothers, well-educated background..." required class="w-full px-3 py-2.5 border border-slate-300 rounded-xl text-sm bg-slate-50 focus:ring-2 focus:ring-slate-400 focus:border-indigo-950 transition font-medium"></textarea>
+                        </div>
+                        <div>
+                            <label class="text-xs font-bold text-slate-700 block mb-1">Partner Requirements (Kaisa Humsafar Chahiye?) *</label>
+                            <textarea id="regPartner" rows="3" placeholder="Age limit, Education preference, City preference..." required class="w-full px-3 py-2.5 border border-slate-300 rounded-xl text-sm bg-slate-50 focus:ring-2 focus:ring-slate-400 focus:border-indigo-950 transition font-medium"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-3 bg-indigo-50 border border-indigo-100 rounded-xl text-xs text-indigo-950 font-medium flex gap-2">
+                    <i class="fa-solid fa-lock text-sm mt-0.5 text-indigo-900"></i>
+                    <span>Your privacy is secure with us. This comprehensive profile will be shared directly with our administration team over secure WhatsApp.</span>
+                </div>
+
+                <div class="pt-2 flex justify-end gap-3 border-t border-slate-100">
+                    <button type="button" onclick="closeModal()" class="px-5 py-2.5 rounded-xl border border-slate-300 text-sm font-bold text-slate-700 hover:bg-slate-100 transition cursor-pointer">Cancel</button>
+                    <button type="submit" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2.5 rounded-xl text-sm font-bold shadow-md transition cursor-pointer">
+                        Submit Profile <i class="fa-brands fa-whatsapp text-base"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
     <script>
+        // Modal Control Functions
+        function openModal() {
+            document.getElementById('registerModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // website scroll lock
+        }
+        function closeModal() {
+            document.getElementById('registerModal').classList.add('hidden');
+            document.body.style.overflow = 'auto'; // website scroll release
+        }
+
+        // Form 1: Quick Inquiry Form Handler
         document.getElementById('whatsappForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
@@ -284,6 +359,49 @@
             var whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
             
             window.open(whatsappUrl, '_blank');
+        });
+
+        // Form 2: Big Registration Form Handler
+        document.getElementById('bigRegisterForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Getting Values
+            var name = document.getElementById('regName').value;
+            var gender = document.getElementById('regGender').value;
+            var age = document.getElementById('regAge').value;
+            var status = document.getElementById('regStatus').value;
+            var city = document.getElementById('regCity').value;
+            var edu = document.getElementById('regEdu').value;
+            var job = document.getElementById('regJob').value;
+            var income = document.getElementById('regIncome').value || "Not Mentioned";
+            var family = document.getElementById('regFamily').value;
+            var partner = document.getElementById('regPartner').value;
+            
+            var phoneNumber = "923331012929";
+            
+            // Formatting Beautiful Message for WhatsApp
+            var message = "*📜 MARHABA MARRIAGE BUREAU - NEW PROFILE REGISTRATION*\n" +
+                          "==================================\n\n" +
+                          "*👤 PERSONAL DETAILS:*\n" +
+                          "• *Name:* " + name + "\n" +
+                          "• *Gender:* " + gender + "\n" +
+                          "• *Age:* " + age + " Years\n" +
+                          "• *Marital Status:* " + status + "\n" +
+                          "• *Location:* " + city + "\n\n" +
+                          "*💼 PROFESSIONAL DETAILS:*\n" +
+                          "• *Education:* " + edu + "\n" +
+                          "• *Job/Occupation:* " + job + "\n" +
+                          "• *Monthly Income:* " + income + "\n\n" +
+                          "*🏡 FAMILY BACKGROUND:*\n" +
+                          " " + family + "\n\n" +
+                          "*🎯 PARTNER REQUIREMENTS:*\n" +
+                          " " + partner + "\n\n" +
+                          "==================================\n" +
+                          "_Please review this profile for matching._";
+            
+            // Open WhatsApp with formatted text
+            window.open("https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message), '_blank');
+            closeModal(); // close modal after submit
         });
     </script>
 
