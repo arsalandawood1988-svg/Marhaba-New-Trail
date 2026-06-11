@@ -7,7 +7,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* Soft Premium Background Pattern */
         .premium-bg {
             background-color: #fafafa;
             background-image: radial-gradient(#e5e7eb 1px, transparent 1px), radial-gradient(#e5e7eb 1px, #fafafa 1px);
@@ -125,10 +124,19 @@
     </section>
 
     <div id="registerModal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white p-6 rounded-2xl w-full max-w-md shadow-2xl">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl font-bold text-indigo-950">Register / Sign Up</h3>
+                <button onclick="closeModal()" class="text-slate-400 hover:text-slate-600"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <p class="text-sm text-slate-600 mb-6">Apni details fill karein aur hum aapse jald rabta karenge.</p>
+            <button onclick="closeModal()" class="w-full bg-indigo-950 text-white py-3 rounded-xl font-bold">Close</button>
         </div>
+    </div>
 
     <script>
-        // Scripts
+        function openModal() { document.getElementById('registerModal').classList.remove('hidden'); }
+        function closeModal() { document.getElementById('registerModal').classList.add('hidden'); }
     </script>
 </body>
 </html>
