@@ -8,37 +8,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <style>
-        /* Pure White Background ke sath har jagah ek jaise clear Navy Blue Dots */
-        html, body {
-            background-color: #ffffff !important;
-            background-image: radial-gradient(#1e3a8a 1.5px, transparent 1.5px) !important;
-            background-size: 26px 26px !important;
-            background-attachment: fixed !important;
+        /* CSS Se Bane Wazay Aur Pakkay Navy Blue Polka Dots */
+        .premium-dot-bg {
+            background-color: #ffffff;
+            /* Yahan dot ka color bilkul clear Navy Blue (#1e3a8a) kar diya hai */
+            background-image: radial-gradient(#1e3a8a 1.8px, transparent 1.8px);
+            background-size: 28px 28px; /* Dots ka darmiyani gap horizontal aur vertical line mein */
         }
-
-        /* Sections ko transparent kiya taake peeche ka white background aur dots ek jaise nazar aayein */
-        section, div, header, footer {
-            background-color: transparent !important;
-        }
-
-        /* Sirf un cards aur elements ko solid white kiya jo text parhne ke liye zaroori hain */
-        .solid-white-card {
-            background-color: #ffffff !important;
-        }
-        
-        .sticky-header {
-            background-color: rgba(255, 255, 255, 0.95) !important;
-            backdrop-filter: blur(8px);
+        /* Top Banner Style */
+        .hero-banner {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.85) 0%, rgba(248, 250, 252, 0.95) 100%);
         }
     </style>
 </head>
-<body class="text-gray-800 font-sans antialiased">
+<body class="premium-dot-bg text-gray-800 font-sans antialiased">
 
-    <div class="bg-indigo-950 text-amber-400 text-xs py-2 px-4 text-center font-semibold tracking-wide relative z-10">
+    <div class="bg-indigo-950 text-amber-400 text-xs py-2 px-4 text-center font-semibold tracking-wide">
         ✨ Government Registered & Pakistan's Most Trusted Matrimonial Platform Since 2026 ✨
     </div>
 
-    <header class="sticky-header shadow-sm sticky top-0 z-50 border-b border-slate-200">
+    <header class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <div class="flex items-center gap-3">
                 <img src="logo.png" alt="Marhaba Marriage Logo" onerror="this.style.display='none'; document.getElementById('text-logo').style.display='block';" class="h-14 w-auto object-contain">
@@ -66,11 +55,11 @@
         </div>
     </header>
 
-    <section id="home" class="relative py-16 lg:py-24 border-b border-slate-200/60">
+    <section id="home" class="relative hero-banner py-16 lg:py-24 border-b border-slate-200/60">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-12 items-center">
             
             <div class="lg:col-span-7 space-y-6">
-                <span class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full text-xs font-bold solid-white-card text-indigo-950 shadow-sm border border-slate-200">
+                <span class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full text-xs font-bold bg-white text-indigo-950 shadow-sm border border-slate-200">
                     🥇 Award Winning Matrimonial Network
                 </span>
                 <h1 class="text-3xl sm:text-5xl font-black text-indigo-950 leading-tight">
@@ -94,7 +83,7 @@
                 </div>
             </div>
             
-            <div class="lg:col-span-5 solid-white-card p-8 rounded-3xl shadow-xl border border-slate-200 relative">
+            <div class="lg:col-span-5 bg-white p-8 rounded-3xl shadow-xl border border-slate-200/80 relative">
                 <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-indigo-950 to-indigo-800 rounded-t-3xl"></div>
                 <div class="space-y-3 mb-6">
                     <div class="flex items-center gap-2">
@@ -131,7 +120,7 @@
         </div>
     </section>
 
-    <section id="about" class="py-20 border-b border-slate-200">
+    <section id="about" class="py-20 bg-white/80 border-b border-slate-200">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
             <h2 class="text-2xl sm:text-4xl font-black text-indigo-950">Why Choose Marhaba Marriage Organization?</h2>
             <div class="h-1 w-20 bg-amber-400 mx-auto rounded-full"></div>
@@ -141,28 +130,28 @@
         </div>
     </section>
 
-    <section id="services" class="py-20">
+    <section id="services" class="py-20 bg-transparent">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
                 <h2 class="text-3xl font-black text-indigo-950">Our Professional Services</h2>
                 <p class="text-slate-600 font-semibold">We provide customized matchmaking solutions for modern yet traditional families.</p>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-8 rounded-2xl solid-white-card border border-slate-200 shadow-md space-y-4 hover:shadow-xl hover:-translate-y-1 transition duration-300">
+                <div class="p-8 rounded-2xl bg-white/95 border border-slate-200 shadow-md space-y-4 hover:shadow-xl hover:-translate-y-1 transition duration-300">
                     <div class="w-12 h-12 rounded-xl bg-indigo-950 flex items-center justify-center text-amber-400 text-xl font-bold shadow-md">
                         <i class="fa-solid fa-shield-halved"></i>
                     </div>
                     <h3 class="text-xl font-bold text-indigo-950">100% Screened Profiles</h3>
                     <p class="text-slate-600 text-sm leading-relaxed font-medium">Hum har aik profile ke credentials aur data ko verify karte hain taake genuine rishte hi aapse share kiye jayein.</p>
                 </div>
-                <div class="p-8 rounded-2xl solid-white-card border border-slate-200 shadow-md space-y-4 hover:shadow-xl hover:-translate-y-1 transition duration-300">
+                <div class="p-8 rounded-2xl bg-white/95 border border-slate-200 shadow-md space-y-4 hover:shadow-xl hover:-translate-y-1 transition duration-300">
                     <div class="w-12 h-12 rounded-xl bg-indigo-950 flex items-center justify-center text-amber-400 text-xl font-bold shadow-md">
                         <i class="fa-solid fa-user-lock"></i>
                     </div>
                     <h3 class="text-xl font-bold text-indigo-950">Strict Privacy Policy</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed font-medium">Aapki images aur data bilkul confidential (mehfooz) rehta hai. Khandaan ki ijazat ke bina kaihn share nahi kiya jata.</p>
+                    <p class="text-slate-600 text-sm leading-relaxed font-medium">Aapki images aur data bilkul confidential (mehfooz) rehta hai. Khandaan ki ijazat ke bina kahin share nahi kiya jata.</p>
                 </div>
-                <div class="p-8 rounded-2xl solid-white-card border border-slate-200 shadow-md space-y-4 hover:shadow-xl hover:-translate-y-1 transition duration-300">
+                <div class="p-8 rounded-2xl bg-white/95 border border-slate-200 shadow-md space-y-4 hover:shadow-xl hover:-translate-y-1 transition duration-300">
                     <div class="w-12 h-12 rounded-xl bg-indigo-950 flex items-center justify-center text-amber-400 text-xl font-bold shadow-md">
                         <i class="fa-solid fa-people-arrows"></i>
                     </div>
@@ -173,18 +162,18 @@
         </div>
     </section>
 
-    <section id="faqs" class="py-20 border-t border-b border-slate-200">
+    <section id="faqs" class="py-20 bg-white/80 border-t border-b border-slate-200">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center space-y-4 mb-16">
                 <h2 class="text-3xl font-black text-indigo-950">Frequently Asked Questions</h2>
                 <p class="text-slate-600 font-semibold">Kuch aam sawalat jo log hum se poochte hain</p>
             </div>
             <div class="space-y-6">
-                <div class="p-6 solid-white-card rounded-2xl border border-slate-200 shadow-sm">
+                <div class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm">
                     <h3 class="text-base font-bold text-indigo-950 mb-2">💡 Registration ka kya process hai?</h3>
                     <p class="text-slate-600 text-sm font-medium">Aap hamari website par "Free Registration" button par click karke form fill karein, details direct hamare safe WhatsApp par mil jayengi aur hamari team aapse rabta karegi.</p>
                 </div>
-                <div class="p-6 solid-white-card rounded-2xl border border-slate-200 shadow-sm">
+                <div class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm">
                     <h3 class="text-base font-bold text-indigo-950 mb-2">💡 Kya data secure rehta hai?</h3>
                     <p class="text-slate-600 text-sm font-medium">Ji bilkul, privacy hamari pehli tarjeeh hai. Kisi bhi larka ya larki ki niji details dono khandaano ki mutafiqa ijazat ke baghair aage nahi barhayi jatin.</p>
                 </div>
@@ -192,7 +181,7 @@
         </div>
     </section>
 
-    <footer class="pt-16 pb-12 border-t border-slate-200">
+    <footer class="bg-white/95 text-slate-600 pt-16 pb-12 border-t border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 border-b border-slate-200">
             <div class="space-y-4">
                 <div class="flex items-center gap-2">
@@ -221,13 +210,13 @@
             <div class="space-y-4">
                 <h3 class="text-indigo-950 font-bold text-sm tracking-wide uppercase">Follow Official Pages</h3>
                 <div class="flex flex-wrap gap-3 pt-1">
-                    <a href="https://www.facebook.com/marhabamarriageorg" target="_blank" class="w-10 h-10 solid-white-card border border-slate-200 rounded-xl flex items-center justify-center text-blue-800 hover:bg-blue-800 hover:text-white transition text-lg shadow-sm">
+                    <a href="https://www.facebook.com/marhabamarriageorg" target="_blank" class="w-10 h-10 bg-slate-50 border border-slate-200 rounded-xl flex items-center justify-center text-blue-800 hover:bg-blue-800 hover:text-white transition text-lg shadow-sm">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
-                    <a href="https://www.instagram.com/marhabamarriageorganization/#" target="_blank" class="w-10 h-10 solid-white-card border border-slate-200 rounded-xl flex items-center justify-center text-pink-600 hover:bg-pink-600 hover:text-white transition text-lg shadow-sm">
+                    <a href="https://www.instagram.com/marhabamarriageorganization/#" target="_blank" class="w-10 h-10 bg-slate-50 border border-slate-200 rounded-xl flex items-center justify-center text-pink-600 hover:bg-pink-600 hover:text-white transition text-lg shadow-sm">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="https://www.youtube.com/@MarhabaMarriageOrganization" target="_blank" class="w-10 h-10 solid-white-card border border-slate-200 rounded-xl flex items-center justify-center text-red-600 hover:bg-red-600 hover:text-white transition text-lg shadow-sm">
+                    <a href="https://www.youtube.com/@MarhabaMarriageOrganization" target="_blank" class="w-10 h-10 bg-slate-50 border border-slate-200 rounded-xl flex items-center justify-center text-red-600 hover:bg-red-600 hover:text-white transition text-lg shadow-sm">
                         <i class="fa-brands fa-youtube"></i>
                     </a>
                 </div>
@@ -242,8 +231,8 @@
 
 
     <div id="registerModal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
-        <div class="solid-white-card rounded-3xl shadow-2xl border border-slate-200 w-full max-w-2xl max-h-[90vh] overflow-y-auto relative">
-            <div class="sticky top-0 solid-white-card border-b border-slate-100 px-6 py-4 flex items-center justify-between z-10">
+        <div class="bg-white rounded-3xl shadow-2xl border border-slate-200 w-full max-w-2xl max-h-[90vh] overflow-y-auto relative animate-in fade-in zoom-in-95 duration-200">
+            <div class="sticky top-0 bg-white border-b border-slate-100 px-6 py-4 flex items-center justify-between z-10">
                 <div class="flex items-center gap-2">
                     <div class="w-9 h-9 rounded-full bg-indigo-950 text-amber-400 flex items-center justify-center">
                         <i class="fa-solid fa-user-plus text-sm"></i>
